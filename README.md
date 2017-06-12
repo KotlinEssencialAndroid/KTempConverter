@@ -3,7 +3,7 @@ KTempConverter
 
 Nesse projeto vamos desenvolver um aplicativo de conversão de temperatura para iniciar a experiência desenvolvendo aplicativos com a linguagem Kotlin.
 
-*** Esse projeto faz parte do curso Kotlin Essencial para Android ([https://www.udemy.com/curso-kotlin-android/](https://www.udemy.com/curso-kotlin-android/?couponCode=ANDROIDPRO)) ***
+***Esse projeto faz parte do curso Kotlin Essencial para Android ([https://www.udemy.com/curso-kotlin-android/](https://www.udemy.com/curso-kotlin-android/?couponCode=ANDROIDPRO))***
 
 
 Pré-requisitos
