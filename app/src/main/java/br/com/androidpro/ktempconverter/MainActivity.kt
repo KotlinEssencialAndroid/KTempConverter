@@ -28,14 +28,29 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun converter(view: View) {
-        var temp: Double = editText.text.toString().toDouble()
+        val tempS: String = editText.text.toString()
+        if (!tempS.isEmpty()) {
+            try {
+                var temp: Double = editText.text.toString().toDouble()
 
-        if (celciusRadio.isChecked) {
-            temp = (temp - 32) * 5/9
-        } else if (fahreinheitRadio.isChecked) {
-            temp = temp * 9/5 + 32
+                if (celciusRadio.isChecked) {
+                    temp = (temp - 32) * 5 / 9
+                } else if (fahreinheitRadio.isChecked) {
+                    temp = temp * 9 / 5 + 32
+                }
+
+                editText.setText(temp.toString())
+            } catch (e: Exception) {
+                Toast.makeText(
+                        view.context,
+                        "Erro ao converter medida! Error: ${e.message}",
+                        Toast.LENGTH_SHORT).show()
+            }
+        }else{
+            Toast.makeText(
+                    view.context,
+                    "Digite a temperadura!",
+                    Toast.LENGTH_SHORT).show()
         }
-
-        editText.setText(temp.toString())
     }
 }
